@@ -4,3 +4,23 @@
 .alina span{
     color: #d2073c;
 }
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 1440px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.main-header__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__link span{
+    color: #d2073c;
+}
