@@ -27,6 +27,12 @@ a{
     box-sizing: border-box;
 }
 
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
 .container{
     width: 1360px;
     margin: 0 auto;
@@ -84,9 +90,29 @@ a{
     font-size: 18px;
 }
 
+
+
+/* About - Us */
+
 .aboutus-section{
+    padding-top: 100px;
     background: #000;
+    background-image: url(../img/features-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
+
+
+.mentor{
+    background-image: url(../img/aboutus-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+
 
 .features-list{
     display: flex;
@@ -119,7 +145,9 @@ a{
     color: #EEEEEE;
 }
 
-
+.questions-section{
+    padding-bottom: 170px;
+}
 .questions-content{
     display: flex;
     justify-content: space-between;
@@ -130,19 +158,28 @@ a{
 
 .questions-content__title{
     width: 100%;
+    font-size: 35px;
 }
-.questions-list{
+.questions-list,
+.answers-list{
     width: 500px;
+    font-size: 18px;
 }
+
+.questions-list span,
+.answers-list span{
+    font-size: 20px;
+    color: #D2073C;
+}
+
 .questions-list__item{
     margin-bottom: 30px;
 }
-.answers-list{
-    width: 500px;
-}
+
 .answers-list__item{
     margin-bottom: 30px;
 }
+
 
 
 /* footer */
@@ -157,6 +194,10 @@ a{
     padding-right: 80px;
     background: rgba(58,57,57, 0.55);
     border-radius: 45px;
+    background-image: url(../img/footer-logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1360px 176px;
 }
 
 .footer-feedback__title{
@@ -182,4 +223,11 @@ a{
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+.footer-bg{
+    background: url(../img/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
