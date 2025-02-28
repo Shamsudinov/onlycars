@@ -18,6 +18,7 @@ a{
 }
 
 .btn-basic{
+    color: #eee;
     font-size: 20px;
     padding: 10px;
     text-transform: uppercase;
@@ -95,7 +96,9 @@ body{
 /* About - Us */
 
 .aboutus-section{
-    padding-top: 100px;
+    border: 2px solid green;
+    min-height: 100vh;
+    /* padding-top: 100px; */
     background: #000;
     background-image: url(../img/features-bg.png);
     background-repeat: no-repeat;
@@ -104,13 +107,15 @@ body{
 }
 
 
-.mentor{
+/* .mentor{
+    border: 2px solid green;
+    min-height: 100vh;
     background-image: url(../img/aboutus-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 
-}
+} */
 
 
 
@@ -129,6 +134,7 @@ body{
     border-radius: 25px;
     border: 3px solid #fff;
     box-sizing: border-box;
+    background: rgba(238, 238, 238, 0.5);
 }
 
 .features-item:nth-child(2n){
@@ -145,6 +151,136 @@ body{
     color: #EEEEEE;
 }
 
+
+
+
+.mentor{
+    min-height: 100vh;
+    border: 2px solid red;
+    /* padding-top: 100px;
+    padding-bottom: 100px; */
+    background-image: url(../img/mentor-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.mentor-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* ----- services ----- */
+.services{
+    border: 2px solid green;
+    min-height: 100vh;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.services-list{
+    display: flex;
+    justify-content: space-between;
+
+}
+.service{
+    width: 340px;
+    height: 460px;
+    padding-top: 60px;
+    background: rgba(238, 238, 238, 0.3);
+    box-sizing: border-box;
+}
+
+/* ----- reviews ----- */
+.rewievs-section{
+    border: 3px solid red;
+    padding-bottom: 130px;
+    padding-top: 130px;
+}
+.slider-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide__img{
+    position: absolute;
+    left: 120px;
+    top: -70px;
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+}
+
+.slide{
+    position: relative;
+    width: 360px;
+    height: 250px;
+    padding-top: 55px;
+    padding-left: 21px;
+    padding-right: 21px;
+    border-radius: 10px;
+    background: rgba(229, 229, 229, 0.2);
+    box-sizing: border-box;
+}
+.slide__name{
+    text-align: center;
+}
+.slide__social{
+    color: #D2073C;
+    text-align: center;
+}
+.slide__text{
+    font-size: 16px;
+    color: #EEEEEE;
+}
+.slider{
+    position: relative;
+}
+.slider__btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #1F1F1F;
+    border:none;
+    font-size: 0px;
+}
+
+.slider__btn:hover{
+    cursor: pointer;
+}
+.slider__btn--left{
+    top: 50px;
+    left: -70px;
+}
+.slider__btn--right{
+    top: 50px;
+    right: -70px;
+}
+.slider__btn--left::before{
+    content: '';
+    
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/arr-left.png);
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+}
+.slider__btn--right::before{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/arr-right.png);
+    background-position: 10px 5px;
+    background-repeat: no-repeat;
+}
+
+
+
+/* questions*/
 .questions-section{
     padding-bottom: 170px;
 }
@@ -157,9 +293,23 @@ body{
 }
 
 .questions-content__title{
+    position: relative;
     width: 100%;
     font-size: 35px;
 }
+
+.questions-content__title::before{
+    content: '';
+    position: absolute;
+    top: -65px;
+    left: -80px;
+    display: block;
+    width: 178px;
+    height: 178px;
+    background-image: url(../img/questions-ison.png);
+    opacity: 0.3;
+}
+
 .questions-list,
 .answers-list{
     width: 500px;
