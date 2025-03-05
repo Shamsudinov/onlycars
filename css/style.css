@@ -69,16 +69,23 @@ body{
 
 
 .promo{
+    /* position: relative; */
     min-height: 100vh;
     background: url(../img/promo-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
+.promo__container{
+    display: flex;
+    justify-content: end;
+}
 .promo__content{
     width: 588px;
+    padding-top: 250px;
+    text-align: center;
     color: #fff;
-    padding-top: 450px;
+    /* position: absolute; */
 }
 
 .promo__header{
