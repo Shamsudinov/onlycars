@@ -18,18 +18,20 @@ a{
 }
 
 .btn-basic{
-    color: #eee;
     font-size: 20px;
+    color: #eee;
     padding: 10px;
     text-transform: uppercase;
-    border: 2px solid #D2073C;
+    border: 3px solid #D2073C;
     background: none;
     border-radius: 10px;
     box-sizing: border-box;
 }
-
+button:hover{
+    cursor: pointer;
+}
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Montserrat;
     font-weight: 400;
     color: #fff;
 }
@@ -90,12 +92,15 @@ body{
 
 .promo__header{
     margin-bottom: 30px;
-    text-transform: uppercase;
     font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .promo__text{
     font-size: 18px;
+    line-height: 1.3;
 }
 
 
@@ -167,11 +172,23 @@ body{
     
 }
 
+.mentor-desc__title{
+    font-size: 35px;
+    line-height: 1.1;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 
+.mentor-desc-list__item span{
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #D2073C;
+}
 
 .features-list{
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-start;
     flex-wrap: wrap;
 }
 
@@ -179,6 +196,8 @@ body{
     width: 384px;
     height: 260px;
     padding: 40px 20px;
+
+    
     text-align: center;
 
     border-radius: 25px;
@@ -186,19 +205,36 @@ body{
     box-sizing: border-box;
     background: rgba(238, 238, 238, 0.5);
 }
+.features-item:first-child{
+    margin-left: 25px;
+    margin-right: 75px;
+}
+.features-item:last-child{
+    border: none;
+    background: none;
+    padding-top: 100px;
+}
 
 .features-item:nth-child(2n){
     width: 282px;
 }
-
+.features-list__item:nth-child(2n){
+    margin-right: 48px;
+}
+.features-list__item{
+    margin-bottom: 60px;
+}
 .features-item__title{
     margin-bottom: 10px;
     color: #fff;
+    line-height: 1.1;
+    font-weight: 600;
     text-transform: uppercase;
 }
 
 .features-item__text{
     color: #EEEEEE;
+    line-height: 1.2;
 }
 
 
@@ -212,20 +248,56 @@ body{
     min-height: 100vh;
     padding-top: 150px;
     padding-bottom: 150px;
+    text-align: center;
 }
 .services-list{
     display: flex;
     justify-content: space-between;
-
 }
 .service{
     width: 340px;
     height: 460px;
     padding-top: 60px;
+    padding-left: 15px;
     background: rgba(238, 238, 238, 0.3);
     box-sizing: border-box;
 }
 
+.service__title{
+    margin-bottom: 10px;
+    font-size: 35px;
+    line-height: 1.1;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.service__title--red{
+    color: #D2073C;
+}
+.service__title--grey{
+    color: #BABABA;
+}
+
+.service__price{
+    margin-bottom: 15px;
+    font-size: 35px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.service__desc{
+    margin-bottom: 27px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+.service__btn{
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 600;
+    /* padding: 10px 19px; */
+}
 /* ----- reviews ----- */
 .rewievs-section{
     border: 3px solid red;
@@ -239,7 +311,7 @@ body{
 
 .slide__img{
     position: absolute;
-    left: 120px;
+    left: 125px;
     top: -70px;
     width: 110px;
     height: 110px;
@@ -256,17 +328,41 @@ body{
     border-radius: 10px;
     background: rgba(229, 229, 229, 0.2);
     box-sizing: border-box;
+    z-index: 1;
 }
+
+.slide::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: block;
+    width: 360px;
+    height: 250px;
+    border-radius: 10px;
+    background: rgba(68, 68, 68, 0.3);
+    z-index: -1;
+}
+
 .slide__name{
+    margin-bottom: 6px;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 600;
     text-align: center;
 }
 .slide__social{
+    margin-bottom: 10px;
     color: #D2073C;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 600;
     text-align: center;
 }
 .slide__text{
-    font-size: 16px;
     color: #EEEEEE;
+    font-size: 16px;
+    line-height: 1.2;
 }
 .slider{
     position: relative;
@@ -372,6 +468,7 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    height: 250px;
     padding-top: 85px;
     padding-bottom: 10px;
     padding-left: 80px;
@@ -382,10 +479,13 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 1360px 176px;
+    box-sizing: border-box;
 }
 
 .footer-feedback__title{
     font-size: 30px;
+    line-height: 1;
+    font-weight: 600;
     text-transform: uppercase;
 }
 .social-list{
@@ -407,6 +507,8 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    font-size: 14px;
+    line-height: 1.3;
 }
 
 .footer-bg{
