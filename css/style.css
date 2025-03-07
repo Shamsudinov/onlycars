@@ -151,6 +151,7 @@ body{
 .mentor-content{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .mentor-img{
     position: relative;
@@ -196,10 +197,7 @@ body{
     width: 384px;
     height: 260px;
     padding: 40px 20px;
-
-    
     text-align: center;
-
     border-radius: 25px;
     border: 3px solid #fff;
     box-sizing: border-box;
@@ -253,6 +251,7 @@ body{
 .services-list{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .service{
     width: 340px;
@@ -298,6 +297,8 @@ body{
     font-weight: 600;
     /* padding: 10px 19px; */
 }
+
+
 /* ----- reviews ----- */
 .rewievs-section{
     border: 3px solid red;
@@ -307,6 +308,7 @@ body{
 .slider-list{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .slide__img{
@@ -517,3 +519,44 @@ body{
     background-size: cover;
     background-position: center center;
 }
+
+
+
+
+@media (max-width: 480px) {
+    .container{
+        width: 480px;
+    }
+
+    .features-list{
+        justify-content: center;
+    }
+    .features-item:first-child{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .features-list__item:nth-child(2n){
+        margin-right: 0;
+    }
+
+    .mentor-content{
+        justify-content:center;
+    }
+
+
+    .services-list{
+        justify-content: center;
+    }
+    .services-list__item{
+        margin-bottom: 50px;
+    }
+
+
+
+    .slider-list{
+        justify-content:center;
+    }
+    .slider-list__item{
+        margin-bottom: 90px;
+    }
+ }
